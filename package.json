@@ -1,0 +1,23 @@
+{
+  "name": "week-9-assignment",
+  "version": "1.0.0",
+  "description": "\"# week-9-assignment\"",
+  "main": "wargame.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smstraughan/week-9-assignment.git"
+  },
+  "author": "Sarah Straughan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smstraughan/week-9-assignment/issues"
+  },
+  "homepage": "https://github.com/smstraughan/week-9-assignment#readme",
+  "dependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
+  }
+}

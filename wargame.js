@@ -146,12 +146,16 @@ class Game{
     }
 }
 
+
+
+
+
 //below is fun code to get a prompt to dertermine the players names
 const player1Name = prompt("Enter Player 1's name:");
 const player2Name = prompt("Enter Player 2's name:");
 
 
-const game = new Game(player1Name,player2Name) // we use the names entered into the prompt to create a new instance of game with p1 and p2
+let game = new Game(player1Name,player2Name) // we use the names entered into the prompt to create a new instance of game with p1 and p2
 game.dealCards() //deal the cards
 game.playWar() //play the war game
 

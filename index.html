@@ -2,12 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>War Game</title>
-    <script src="./wargame.js"></script>
-
+    <link rel="stylesheet" href="node_modules/mocha/mocha.css" />
+    
 </head>
 <body>
    <header>Week 9 Coding Assignment -- wargame</header> 
+  
+   <!-- Button to run tests -->
+   
+   <button onclick="runTests()" style="margin: 20px; padding: 10px; font-size: 16px;">
+     Run Tests
+   </button>
+   
+   <div id="mocha"></div>
+
+    <script src="./node_modules/mocha/mocha.js"></script>
+    <script src="./node_modules/chai/chai.js"></script>
+    
+    <script>
+      mocha.setup('bdd')
+    </script>
+    
+    <script src="wargame.js"></script>
+    <script src="index_test.js"></script>
+    
+    <script>
+      function runTests() {
+        defineTests();  // Define the tests
+        mocha.run();     // Run them
+      }
+    </script>
 </body>
 </html>
